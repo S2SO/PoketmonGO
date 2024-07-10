@@ -1,0 +1,48 @@
+.banner {
+  width: 100%;
+  height: 100vh;
+  min-height: 750px;
+  position: relative;
+  font-family: "Pretendard-Regular";
+}
+.banner-bg {
+  width: 100%;
+  height: 100%;
+}
+.banner-bg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner-texts {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8%;
+  line-height: 1.3;
+}
+.banner-title {
+  font-size: 33px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.banner-info {
+  width: 50%;
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  .banner-texts {
+    margin-top: 10%;
+  }
+  .banner-info {
+    width: 90%;
+  }
+  .banner-title {
+    font-size: 30px;
+  }
+}

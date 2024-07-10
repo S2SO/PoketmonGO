@@ -1,0 +1,111 @@
+footer {
+  width: 100%;
+  height: 150px;
+  font-family: "Pretendard-Regular";
+}
+.foot-container {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.foot-menuGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 15px;
+  grid-column-gap: 50px;
+  font-size: 13px;
+}
+.foot-menuGrid > p {
+  width: fit-content;
+  cursor: pointer;
+}
+.sns-icons {
+  display: flex;
+  gap: 10px;
+}
+.sns-icons > span {
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  border: 1.5px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.sns-icons > span:hover {
+  border-color: #e1306d;
+  color: #e1306d;
+}
+
+.foot-logo {
+  display: flex;
+  gap: 10px;
+}
+.company-icon {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+.company-icon > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.niantic-icon {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+}
+.niantic-icon > img {
+  width: 100%;
+  height: 100%;
+}
+
+.foot-line {
+  width: 100%;
+  height: auto;
+  background-color: #e2f6f7;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.foot-button {
+  display: flex;
+  gap: 10px;
+  margin: 7px 0;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+.foot-button:hover .go_icon {
+  background-color: rgb(65, 132, 148);
+}
+.go_icon {
+  color: white;
+  padding: 3px 5px;
+  background-color: #6ca8b9;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  .foot-container {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+  footer {
+    height: 250px;
+  }
+  .foot-line {
+    height: fit-content;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

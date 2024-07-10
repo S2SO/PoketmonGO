@@ -1,0 +1,74 @@
+.download {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  font-family: "Pretendard-Regular";
+}
+.download-bg {
+  width: 100%;
+  height: 100%;
+}
+.download-bg > img {
+  width: 100%;
+  height: 100%;
+}
+.download-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.download-container > .logoBox {
+  width: 280px;
+}
+.download-container > .logoBox > img {
+  width: 100%;
+  height: auto;
+}
+.download-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.download-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+.download-links {
+  display: flex;
+  gap: 10px;
+}
+.download-button {
+  width: 155px;
+  height: 45px;
+  cursor: pointer;
+}
+.download-button > img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .download {
+    height: 650px;
+  }
+  .download-container {
+    flex-direction: column;
+  }
+  .download-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .download-text {
+    align-items: center;
+  }
+}
